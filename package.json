@@ -1,0 +1,41 @@
+{
+  "name": "nextjs-fullstack-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server.mjs --turbo",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "seed:admin": "node --input-type=module src/scripts/seedAdmin.js",
+    "init:indexes": "node scripts/createIndexes.mjs",
+    "verify:system": "node scripts/verifySystem.mjs"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.0.0",
+    "axios": "^1.13.2",
+    "bcryptjs": "^2.4.3",
+    "framer-motion": "^12.34.0",
+    "html2canvas": "^1.4.1",
+    "ioredis": "^5.3.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.3.0",
+    "next": "^14.2.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "react-redux": "^9.0.0",
+    "redux-persist": "^6.0.0",
+    "resend": "^6.9.2",
+    "socket.io": "^4.8.3",
+    "socket.io-client": "^4.8.3",
+    "swiper": "^12.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.0",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.4.0"
+  }
+}
